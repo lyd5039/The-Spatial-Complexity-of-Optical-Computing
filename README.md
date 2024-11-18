@@ -2,7 +2,7 @@
 
 This repository contains code for generating and analyzing sparse, row-sparse, and local-sparse matrices, used in the following paper:
 
-> Yandong Li and Francesco Monticone. "The Spatial Complexity of Optical Computing and How to Reduce It" (2024)
+> Yandong Li and Francesco Monticone. "The Spatial Complexity of Optical Computing and How to Reduce It" [arXiv:2411.10435](https://arxiv.org/abs/2411.10435) (2024)
 
 # License
 
