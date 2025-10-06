@@ -1,10 +1,56 @@
-# The Spatial Complexity of Optical Computing
+# The Spatial Complexity of Optical Computing: Toward Space-Efficient Design
 
-This repository contains code for generating and analyzing sparse, row-sparse, and local-sparse matrices, used in the following paper:
+> **The spatial complexity of optical computing: toward space-efficient design**  
+> Yandong Li and Francesco Monticone. *Nature Communications* **16**, 8588 (2025)  
+> [🔗 Link to the paper](https://www.nature.com/articles/s41467-025-63453-8)
 
-> Yandong Li and Francesco Monticone. "The Spatial Complexity of Optical Computing and How to Reduce It" [arXiv:2411.10435](https://arxiv.org/abs/2411.10435) (2024)
+---
 
-# License
+## Overview
+
+We analyze optical structures from an **algorithmic perspective**, examining how their spatial footprint scales with the dimensionality of the mathematical operations they perform, and generalize these findings into **spatial scaling laws** for free-space optics and photonic chips.  
+We develop **optics-specific neural pruning techniques** that systematically simplify optical neural networks (ONNs), fundamentally reducing their spatial scaling while **maintaining performance comparable to conventional designs**.  
+A variety of **pruned, space-efficient ONNs** are demonstrated, spanning a wide range of architectures from multilayer perceptrons to edge models (**MobileNet**) and computer vision models (**Faster R-CNN**). Our theoretical and computational results reveal a **trend of diminishing returns on accuracy as ONN structure size increases**, highlighting that the ultimate limit of optical computing lies in **an optimal balance between device size and accuracy**.
+
+---
+
+## Repository Structure
+
+For convenience, the different components of this work are organized into corresponding subproject folders, each of which can be run independently.  
+
+- **`scaling_law_analysis/`** — Generate and analyze sparse, row-sparse, and local-sparse device kernels
+- **`structural_bloc_diag_mlp/`** — Block-diagonal structured ONNs for compact photonic chips  
+- **`structural_bloc-circ_mlp/`** — Block-circulant structured ONNs for compact photonic chips  
+- **Thin free-space optics** enabled by Brain-Inspired Modular Training (BIMT)  
+  For details on BIMT, see [Ziming Liu et al., *Entropy* (2024)](https://doi.org/10.3390/e26010041). Note: turn off bias for all layers
+- **`structural_bloc_diag_MobileNetV2/`** — Compact photonic chip for edge AI  
+  MobileNetV2 with fully connected layers pruned to the structural block-diagonal pattern  
+- **`structural_bloc_diag_FasterRCNN_MobileNetV3/`** — Compact photonic chip for object detection  
+  Faster R-CNN with fully connected layers pruned to the structural block-diagonal pattern  
+
+---
+
+## Cite this Paper
+
+If you use this code or build upon our work, please cite:
+
+```bibtex
+@Article{Li_2025_spatial_complexity,
+author={Li, Yandong and Monticone, Francesco},
+title={The spatial complexity of optical computing: toward space-efficient design},
+journal={Nature Communications},
+year={2025},
+month={Sep},
+day={29},
+volume={16},
+number={1},
+pages={8588},
+issn={2041-1723},
+doi={10.1038/s41467-025-63453-8}
+}
+```
+
+## License
 
 The code in this repository is released under the following license:
 
