@@ -1,0 +1,129 @@
+{
+     "config0": {
+        "model_name": "bloc_diag_model",
+        "dataset": "MNIST",
+        "layer_sizes": [784, 160, 160, 40, 10],
+        "config_name": "config0",
+        "nonzero_blocks": "[160]*1 | [784]*1, [160]*1 | [160]*1, [40]*1 | [160]*1, [10]*1 | [40]*1",
+        "if_bias": false,
+        "nonlinear_activation": "SiLU__every_layer_except_last",
+        "learning_rate": 0.01,
+        "scheduler_step_size": 20,
+        "scheduler_gamma": 0.5,
+        "train_loader_batch_size": 64,
+        "stopping_epoch": 100,
+        "multiplier_off_diag_loss": [0.0]
+    }
+
+     "config1": {
+        "model_name": "bloc_diag_model",
+        "dataset": "MNIST",
+        "layer_sizes": [784, 160, 160, 40, 10],
+        "config_name": "config1",
+        "nonzero_blocks": "[1]*160 | [4]*16+[5]*144, [1]*160 | [1]*160, [1]*40 | [4]*40, [1]*10 | [4]*10",
+        "if_bias": false,
+        "nonlinear_activation": "SiLU__every_layer_except_last",
+        "learning_rate": 0.01,
+        "scheduler_step_size": 20,
+        "scheduler_gamma": 0.5,
+        "train_loader_batch_size": 64,
+        "stopping_epoch": 100,
+        "multiplier_off_diag_loss": [4.0, 7.0, 10.0, 20.0]
+    },
+
+     "config2": {
+        "model_name": "bloc_diag_model",
+        "dataset": "MNIST",
+        "layer_sizes": [784, 160, 160, 40, 10],
+        "config_name": "config2",
+        "nonzero_blocks": "[1]*160 | [4]*16+[5]*144, [2]*80 | [2]*80, [1]*40 | [4]*40, [1]*10 | [4]*10",
+        "if_bias": false,
+        "nonlinear_activation": "SiLU__every_layer_except_last",
+        "learning_rate": 0.01,
+        "scheduler_step_size": 20,
+        "scheduler_gamma": 0.5,
+        "train_loader_batch_size": 64,
+        "stopping_epoch": 100,
+        "multiplier_off_diag_loss": [4.0, 7.0, 10.0]
+    },
+     
+     "config3": {
+        "model_name": "bloc_diag_model",
+        "dataset": "MNIST",
+        "layer_sizes": [784, 160, 160, 40, 10],
+        "config_name": "config3",
+        "nonzero_blocks": "[1]*160 | [4]*16+[5]*144, [5]*32 | [5]*32, [1]*40 | [4]*40, [1]*10 | [4]*10",
+        "if_bias": false,
+        "nonlinear_activation": "SiLU__every_layer_except_last",
+        "learning_rate": 0.01,
+        "scheduler_step_size": 20,
+        "scheduler_gamma": 0.5,
+        "train_loader_batch_size": 64,
+        "stopping_epoch": 100,
+        "multiplier_off_diag_loss": [4.0, 5.0, 7.0]
+    },
+
+     "config4": {
+        "model_name": "bloc_diag_model",
+        "dataset": "MNIST",
+        "layer_sizes": [784, 160, 160, 40, 10],
+        "config_name": "config4",
+        "nonzero_blocks": "[2]*80 | [8]*8+[10]*72, [10]*16 | [10]*16, [2]*20 | [8]*20, [2]*5 | [8]*5",
+        "if_bias": false,
+        "nonlinear_activation": "SiLU__every_layer_except_last",
+        "learning_rate": 0.01,
+        "scheduler_step_size": 20,
+        "scheduler_gamma": 0.5,
+        "train_loader_batch_size": 64,
+        "stopping_epoch": 100,
+        "multiplier_off_diag_loss": [3.0, 5.0, 7.0]
+    },
+
+     "config5": {
+        "model_name": "bloc_diag_model",
+        "dataset": "MNIST",
+        "layer_sizes": [784, 160, 160, 40, 10],
+        "config_name": "config5",
+        "nonzero_blocks": "[4]*40 | [20]*36+[16]*4, [20]*8 | [20]*8, [5]*8 | [20]*8, [5]*2 | [20]*2",
+        "if_bias": false,
+        "nonlinear_activation": "SiLU__every_layer_except_last",
+        "learning_rate": 0.01,
+        "scheduler_step_size": 20,
+        "scheduler_gamma": 0.5,
+        "train_loader_batch_size": 64,
+        "stopping_epoch": 100,
+        "multiplier_off_diag_loss": [2.0, 4.0, 7.0]
+    },
+
+     "config6": {
+        "model_name": "bloc_diag_model",
+        "dataset": "MNIST",
+        "layer_sizes": [784, 160, 160, 40, 10],
+        "config_name": "config6",
+        "nonzero_blocks": "[8]*20 | [40]*18+[32]*2, [40]*4 | [40]*4, [10]*4 | [40]*4, [10]*1 | [40]*1",
+        "if_bias": false,
+        "nonlinear_activation": "SiLU__every_layer_except_last",
+        "learning_rate": 0.01,
+        "scheduler_step_size": 20,
+        "scheduler_gamma": 0.5,
+        "train_loader_batch_size": 64,
+        "stopping_epoch": 100,
+        "multiplier_off_diag_loss": [2.0, 4.0, 7.0]
+    },
+
+     "config7": {
+        "model_name": "bloc_diag_model",
+        "dataset": "MNIST",
+        "layer_sizes": [784, 160, 160, 40, 10],
+        "config_name": "config7",
+        "nonzero_blocks": "[16]*10 | [80]*9+[64]*1, [80]*2 | [80]*2, [20]*2 | [80]*2, [10]*1 | [40]*1",
+        "if_bias": false,
+        "nonlinear_activation": "SiLU__every_layer_except_last",
+        "learning_rate": 0.01,
+        "scheduler_step_size": 20,
+        "scheduler_gamma": 0.5,
+        "train_loader_batch_size": 64,
+        "stopping_epoch": 100,
+        "multiplier_off_diag_loss": [2.0, 4.0, 7.0]
+    }
+}

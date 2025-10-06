@@ -1,0 +1,55 @@
+{
+    "config2": {
+        "model_name": "structural_bloc_circ_model",
+        "layer_sizes": [800, 100, 100, 10, 10],
+        "config_name": "config2",
+        "n_blocks_list": [100, 100, 10, 1],
+        "if_bias": false,
+        "nonlinear_activation": "SiLU__every_layer_except_last"
+    },
+     
+    "config3": {
+        "model_name": "structural_bloc_circ_model",
+        "layer_sizes": [800, 100, 100, 10, 10],
+        "config_name": "config3",
+        "n_blocks_list": [100, 50, 10, 1],
+        "if_bias": false,
+        "nonlinear_activation": "SiLU__every_layer_except_last"
+    },
+    
+    "config4": {
+        "model_name": "structural_bloc_circ_model",
+        "layer_sizes": [800, 100, 100, 10, 10],
+        "config_name": "config4",
+        "n_blocks_list": [100, 20, 10, 1],
+        "if_bias": false,
+        "nonlinear_activation": "SiLU__every_layer_except_last"
+    },
+    
+    "config5": {
+        "model_name": "structural_bloc_circ_model",
+        "layer_sizes": [800, 100, 100, 10, 10],
+        "config_name": "config5",
+        "n_blocks_list": [100, 10, 10, 1],
+        "if_bias": false,
+        "nonlinear_activation": "SiLU__every_layer_except_last"
+    },
+
+    "config6": {
+        "model_name": "structural_bloc_circ_model",
+        "layer_sizes": [800, 100, 100, 10, 10],
+        "config_name": "config6",
+        "n_blocks_list": [50, 5, 5, 1],
+        "if_bias": false,
+        "nonlinear_activation": "SiLU__every_layer_except_last"
+    },
+    
+    "config7": {
+        "model_name": "structural_bloc_circ_model",
+        "layer_sizes": [800, 100, 100, 10, 10],
+        "config_name": "config7",
+        "n_blocks_list": [20, 2, 2, 1],
+        "if_bias": false,
+        "nonlinear_activation": "SiLU__every_layer_except_last"
+    }
+}
