@@ -19,7 +19,7 @@ We analyze optical structures from an **algorithmic perspective**, examining how
   <figcaption>
     <sub><strong>Simplifying a generic free-space optical system.</strong>
     The thickness scaling law can be reduced from <strong>linear</strong> to <strong>square-root</strong> when the device kernel matrix is designed to exhibit a <strong><em>local sparse</em></strong> structure. 
-    Visually, a <strong>sparse</strong> matrix has significantly fewer couplings than a dense one. In a <strong>local</strong> kernel matrix, all couplings are only slightly inclined from vertical, whereas nonlocal kernels lack this feature.</sub>
+    Visually, a <strong>sparse</strong> matrix has significantly fewer couplings than a dense one. In a <strong>local</strong> kernel matrix, all couplings are only slightly inclined from vertical, whereas nonlocal kernels lack this feature.</sub><br>&nbsp;
   </figcaption>
 </figure>
 
@@ -31,7 +31,7 @@ We analyze optical structures from an **algorithmic perspective**, examining how
   </p>
   <figcaption>
     <sub><strong>Simplifying a generic two-dimensional photonic chip</strong> based on a mesh of Mach–Zehnder interferometers (MZIs).
-    The block-diagonalization, understood from a graph perspective, breaks the kernel matrix into a <strong>linear number</strong> of small, decoupled complete bipartite graphs, each of which requires a constant number of MZIs to implement. When each block is sufficiently small, block-diagonalization reduces the total number of required MZIs from <strong>quadratic</strong> to <strong>quasi-linear</strong>.</sub>
+    The block-diagonalization, understood from a graph perspective, breaks the kernel matrix into a <strong>linear number</strong> of small, decoupled complete bipartite graphs, each of which requires a constant number of MZIs to implement. When each block is sufficiently small, block-diagonalization reduces the total number of required MZIs from <strong>quadratic</strong> to <strong>quasi-linear</strong>.</sub><br>&nbsp;
   </figcaption>
 </figure>
 
