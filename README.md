@@ -36,7 +36,7 @@ We analyze optical structures from an **algorithmic perspective**, examining how
 </figure>
 
 We also develop **optics-specific neural pruning techniques** that systematically simplify optical neural networks (ONNs), fundamentally reducing their spatial scaling while **maintaining performance comparable to conventional designs**.  
-A variety of **pruned, space-efficient ONNs** are demonstrated, spanning a wide range of architectures from multilayer perceptrons to edge models (**MobileNet**) and computer vision models (**Faster R-CNN**). Our theoretical and computational results reveal a **trend of diminishing returns on accuracy as ONN structure size increases**, highlighting that the ultimate limit of optical computing lies in **an optimal balance between device size and accuracy**.
+A variety of **pruned, space-efficient ONNs** are demonstrated, spanning a wide range of architectures from multilayer perceptrons to edge AI models (**MobileNet**) and computer vision models (**Faster R-CNN**). Our theoretical and computational results reveal a **trend of diminishing returns on accuracy as ONN structure size increases**, highlighting that the ultimate limit of optical computing lies in **an optimal balance between device size and accuracy**.
 
 ---
 
