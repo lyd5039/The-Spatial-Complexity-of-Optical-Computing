@@ -38,6 +38,19 @@ We analyze optical structures from an **algorithmic perspective**, examining how
 We also develop **optics-specific neural pruning techniques** that systematically simplify optical neural networks (ONNs), fundamentally reducing their spatial scaling while **maintaining performance comparable to conventional designs**.  
 A variety of **pruned, space-efficient ONNs** are demonstrated, spanning a wide range of architectures from multilayer perceptrons to edge AI models (**MobileNet**) and computer vision models (**Faster R-CNN**). Our theoretical and computational results reveal a **trend of diminishing returns on accuracy as ONN structure size increases**, highlighting that the ultimate limit of optical computing lies in **an optimal balance between device size and accuracy**.
 
+### 🔸 Additional Highlights
+
+- ***Theoretical proof of scaling law improvements for free-space optics*** &nbsp;&nbsp; (Supplementary Note 1)  
+  By mapping the optical system to a **spatial graph** (nodes : input/output ports, edges : interactions/couplings), we analyze the overlapping properties in the **global connectivity pattern** among all mode interactions in the device and formulate the proof within this graph-based framework.
+
+- ***GPU-accelerated implementations for block-diagonal and block-circulant matrices*** &nbsp;&nbsp; (Supplementary Notes 6.4 and 6.6)  
+  These structured matrices contain far fewer independent parameters than dense matrices. In our implementation, only the **nonzero parameters** are stored as learnable weights, and matrix operations are performed efficiently **without reconstructing the full matrix**.
+
+- ***Theoretical background of neural pruning*** &nbsp;&nbsp; (Supplementary Note 7)  
+  The **overparameterization** of large-scale neural networks creates opportunities for pruning. We discuss the **Lottery Ticket Hypothesis** ([Frankle & Carbin, 2019](https://arxiv.org/abs/1803.03635)): large networks contain subnetworks (“winning tickets”) that, when trained in isolation, can reach test accuracy comparable to the original network in a similar number of iterations. In addition to existing formal proofs, we provide **intuitive and concise** arguments explaining why pruning opportunities almost always exist in large models.
+
+*(Supplementary information can be found [here](https://www.nature.com/articles/s41467-025-63453-8#Sec15).)*
+
 ---
 
 ## Repository Structure
